@@ -56,19 +56,20 @@ function aboutUser(username:string,age?:number,isAdmin?:boolean){
 abstract class Fighter{
     abstract fight():string;
     move(){
-        console.log("Kicking");
+        return "Kicking";
     }
 }
 
 class Ryu extends Fighter{
     fight(): string {
-        return 'Lightening Kick';
+        //return 'Lightening Kick';
+        return super.move();// to call parent class method
     }
 }
 
 let ryu=new Ryu();
 //console.log(ryu.fight());
-//ryu.move();
+//console.log(ryu.move());
 
 
 //********************************************************************************************** */
