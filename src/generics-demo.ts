@@ -106,3 +106,5 @@ let emp3=new Employee<number,number>(3,32);
 console.log(emp1);
 console.log(emp2);
 console.log(emp3);
+
+
