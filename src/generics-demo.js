@@ -52,6 +52,32 @@ console.log(func2);
 var getFullName = function (obj) {
     return __assign(__assign({}, obj), { fullname: obj.firstname + " " + obj.lastname });
 };
+//calling getFullName() with any number of properties.
 console.log(getFullName({ firstname: "Ketaki", lastname: "Kashyap" }));
 console.log(getFullName({ firstname: "Ketaki", lastname: "Kashyap", age: 32 }));
 console.log(getFullName({ firstname: "Ketaki", lastname: "Kashyap", age: 43, isAdmin: true }));
+var resource1 = {
+    RID: 101,
+    Rtype: "Server 01"
+};
+console.log(resource1);
+var resource2 = {
+    RID: "102",
+    Rtype: "Server 02"
+};
+console.log(resource2);
+//Practice 3
+var Employee = /** @class */ (function () {
+    function Employee(empid, empAge) {
+        this.empid = empid;
+    }
+    return Employee;
+}());
+//calling employee with different datatypes
+var emp1 = new Employee("EMP001", 32);
+var emp2 = new Employee("EMP002", "32");
+var emp3 = new Employee(3, 32);
+console.log(emp1);
+console.log(emp2);
+console.log(emp3);
+//

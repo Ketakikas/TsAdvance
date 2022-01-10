@@ -86,13 +86,15 @@ let resource1:Resource1<number,string>={
     RID:101,
     Rtype:"Server 01"
 }
-
+console.log(resource1);
 let resource2:Resource1<string,string>={
     RID:"102",
     Rtype:"Server 02"
 }
+console.log(resource2);
 
-//************************************************ */
+
+//Practice 3
 class Employee<T,U>{
     constructor(private empid:T,empAge:U){}
 }
@@ -101,6 +103,6 @@ class Employee<T,U>{
 let emp1=new Employee<string,number>("EMP001",32);
 let emp2=new Employee<string,string>("EMP002","32");
 let emp3=new Employee<number,number>(3,32);
-
-
-//
+console.log(emp1);
+console.log(emp2);
+console.log(emp3);
